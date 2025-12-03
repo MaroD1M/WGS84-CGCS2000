@@ -11,7 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 复制项目文件
 COPY . .
 
-# 暴露端口（Flask默认5000）
 EXPOSE 5000
 
 # 启动命令
