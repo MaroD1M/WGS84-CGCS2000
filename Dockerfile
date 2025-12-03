@@ -15,4 +15,6 @@ COPY . .
 EXPOSE 5000
 
 # 启动命令
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
+# 替换原 CMD 命令
+# 假设入口文件为 mian.py（若实际是 main.py 需同步修改）
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "main:app"]
