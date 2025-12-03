@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/${{ github.repository_owner }}/wgs2000-web
+          images: ghcr.io/${{ github.repository_owner }}/wgs84-cgcs2000
           tags: |
             type=ref,event=branch
             type=sha,format=short
