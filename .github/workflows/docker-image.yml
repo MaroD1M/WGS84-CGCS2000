@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write  # 允许推送镜像到GHCR
+      packages: write  # 推送镜像到GHCR
 
     steps:
       - name: Checkout code
